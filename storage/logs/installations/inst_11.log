@@ -1,0 +1,506 @@
+[root@mail ~]# yum remove -y httpd libopendkim-devel opendkim postfix php*;exit
+Loaded plugins: fastestmirror
+No Match for argument: libopendkim-devel
+No Match for argument: opendkim
+No Match for argument: postfix
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.6-97.el7.centos will be erased
+--> Processing Dependency: httpd-mmn = 20120211x8664 for package: 1:mod_ssl-2.4.6-97.el7.centos.x86_64
+--> Processing Dependency: httpd for package: 1:mod_ssl-2.4.6-97.el7.centos.x86_64
+--> Processing Dependency: httpd = 2.4.6-97.el7.centos for package: 1:mod_ssl-2.4.6-97.el7.centos.x86_64
+---> Package php.x86_64 0:7.1.33-10.el7.remi will be erased
+---> Package php-cli.x86_64 0:7.1.33-10.el7.remi will be erased
+---> Package php-common.x86_64 0:7.1.33-10.el7.remi will be erased
+---> Package php-gd.x86_64 0:7.1.33-10.el7.remi will be erased
+---> Package php-json.x86_64 0:7.1.33-10.el7.remi will be erased
+---> Package php-ldap.x86_64 0:7.1.33-10.el7.remi will be erased
+--
+-> Package php-mbstring.x86_64 0:7.1.33-10.el7.remi will be erased
+---> Package php-mcrypt.x86_64 0:7.1.33-10.el7.remi will be erased
+---> Package php-mysqlnd.x86_64 0:7.1.33-10.el7.remi will be erased
+---> Package php-opcache.x86_64 0:7.1.33-10.el7.remi will be erased
+---> Package php-pdo.x86_64 0:7.1.33-10.el7.remi will be erased
+---> Package php-pecl-zip.x86_64 0:1.19.2-1.el7.remi.7.1 will be erased
+---> Package php-pgsql.x86_64 0:7.1.33-10.el7.remi will be erased
+---> Package php-soap.x86_64 0:7.1.33-10.el7.remi will be erased
+---> Package php-xml.x86_64 0:7.1.33-10.el7.remi will be erased
+---> Package php-xmlrpc.x86_64 0:7.1.33-10.el7.remi will be erased
+--> Running transaction check
+---> Package mod_ssl.x86_64 1:2.4.6-97.el7.centos will be erased
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package          Arch       Version                      Repository       Size
+=======================
+=========================================================
+Removing:
+ httpd            x86_64     2.4.6-97.el7.centos          @updates        9.4 M
+ php              x86_64     7.1.33-10.el7.remi           @remi-php71     9.4 M
+ php-cli          x86_64     7.1.33-10.el7.remi           @remi-php71      14 M
+ php-common       x86_64     7.1.33-10.el7.remi           @remi-php71     8.0 M
+ php-gd           x86_64     7.1.33-10.el7.remi           @remi-php71     204 k
+ php-json         x86_64     7.1.33-10.el7.remi           @remi-php71      80 k
+ php-ldap         x86_64     7.1.33-10.el7.remi           @remi-php71     129 k
+ php-mbstring     x86_64     7.1.33-10.el7.remi           @remi-php71     2.8 M
+ php-mcrypt       x86_64     7.1.33-10.el7.remi           @remi-php71      89 k
+ php-mysqlnd      x86_64     7.1.33-10.el7.remi           @remi-php71     850 k
+ php-opcache      x86_64     7.1.33-10.el7.remi           @remi-php71     800 k
+ php-pdo          x86_64     7.1.33-10.el7.remi           @remi
+-php71     386 k
+ php-pecl-zip     x86_64     1.19.2-1.el7.remi.7.1        @remi-php71     206 k
+ php-pgsql        x86_64     7.1.33-10.el7.remi           @remi-php71     363 k
+ php-soap         x86_64     7.1.33-10.el7.remi           @remi-php71     616 k
+ php-xml          x86_64     7.1.33-10.el7.remi           @remi-php71     855 k
+ php-xmlrpc       x86_64     7.1.33-10.el7.remi           @remi-php71     165 k
+Removing for dependencies:
+ mod_ssl          x86_64     1:2.4.6-97.el7.centos        @updates        224 k
+
+Transaction Summary
+================================================================================
+Remove  17 Packages (+1 Dependent package)
+
+Installed size: 49 M
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Erasing    : php-7.1.33-10.el7.remi.x86_64                               1/18 
+  Erasing    : 1:mod_ssl-2.4.6-97.el7.centos.x86_64                        2/18 
+  Erasing    : php-cli-7.1.
+33-10.el7.remi.x86_64                           3/18 
+  Erasing    : php-mbstring-7.1.33-10.el7.remi.x86_64                      4/18 
+  Erasing    : php-mysqlnd-7.1.33-10.el7.remi.x86_64                       5/18 
+  Erasing    : php-ldap-7.1.33-10.el7.remi.x86_64                          6/18 
+  Erasing    : php-pgsql-7.1.33-10.el7.remi.x86_64                         7/18 
+  Erasing    : php-pdo-7.1.33-10.el7.remi.x86_64                           8/18 
+  Erasing    : php-opcache-7.1.33-10.el7.remi.x86_64                       9/18 
+  Erasing    : php-gd-7.1.33-10.el7.remi.x86_64                           10/18 
+  Erasing    : php-pecl-zip-1.19.2-1.el7.remi.7.1.x86_64                  11/18 
+
+  Erasing    : php-soap-7.1.33-10.el7.remi.x86_64                         12/18 
+  Erasing    : php-mcrypt-7.1.33-10.el7.remi.x86_64                       13/18 
+  Erasing    : php-xmlrpc-7.1.33-10.el7.remi.x86_64                       14/18 
+  Erasing    : httpd-2.4.6-97.el7.centos.x86_64                           15/18 
+  Erasing    : php-xml-7.1.33-10.el7.remi.x86_64                          16/18 
+  Erasing    : php-json-7.1.33-10.el7.remi.x86_64                         17/18 
+  Erasing    : php-common-7.1.33-10.el7.remi.x86_64                       18/18 
+warning: /etc/php.ini saved as /etc/php.ini.rpmsave
+  Verifying  : php-xmlrpc-7.1.33-10.el7.remi.x86_64                        1/18 
+  Verifying  : php-mcrypt-7.1.33-10.el7.remi.x86_64                        2/18 
+  Verifying  : php-pdo-7.1.33-10.el7.remi.x86_64                           3/18 
+  Verifying  : php-json-7.1.33-10.el7.remi.x86_64                          4/18 
+  Verifying  : php-soap-7.1.33-10.el7.remi.x86_64        
+                  5/18 
+  Verifying  : php-pecl-zip-1.19.2-1.el7.remi.7.1.x86_64                   6/18 
+  Verifying  : php-gd-7.1.33-10.el7.remi.x86_64                            7/18 
+  Verifying  : php-7.1.33-10.el7.remi.x86_64                               8/18 
+  Verifying  : php-opcache-7.1.33-10.el7.remi.x86_64                       9/18 
+  Verifying  : php-cli-7.1.33-10.el7.remi.x86_64                          10/18 
+  Verifying  : php-pgsql-7.1.33-10.el7.remi.x86_64                        11/18 
+  Verifying  : httpd-2.4.6-97.el7.centos.x86_64                           12/18 
+  Verifying  : php-xml-7.1.33-10.el7.remi.x86_64                          13/18 
+  Verifying  : 1:mod_ssl-2.4.6-97.el7.centos.x86_64                       14/18 
+  Verifying  : php-common-7.1.33-10.el7.remi.x86_64                       15/18 
+  Verifying  : php-ldap-7.1.33-10.el7.remi.x86_64                         16/18 
+  Verifying  : php-mysqlnd-7.1.33-10.el7.remi.x86_64                      17/18 
+  
+Verifying  : php-mbstring-7.1.33-10.el7.remi.x86_64                     18/18 
+
+Removed:
+  httpd.x86_64 0:2.4.6-97.el7.centos                                            
+  php.x86_64 0:7.1.33-10.el7.remi                                               
+  php-cli.x86_64 0:7.1.33-10.el7.remi                                           
+  php-common.x86_64 0:7.1.33-10.el7.remi                                        
+  php-gd.x86_64 0:7.1.33-10.el7.remi                                            
+  php-json.x86_64 0:7.1.33-10.el7.remi                                          
+  php-ldap.x86_64 0:7.1.33-10.el7.remi                                          
+  php-mbstring.x86_64 0:7.1.33-10.el7.remi                                      
+  php-mcrypt.x86_64 0:7.1.33-10.el7.remi                                        
+  php-mysqlnd.x86_64 0:7.1.33-10.el7.remi                                       
+  php-opcache.x86_64 0:7.1.33-10.el7.remi                                       
+  php-pdo.x86_64 0:7.1.33-10.e
+l7.remi                                           
+  php-pecl-zip.x86_64 0:1.19.2-1.el7.remi.7.1                                   
+  php-pgsql.x86_64 0:7.1.33-10.el7.remi                                         
+  php-soap.x86_64 0:7.1.33-10.el7.remi                                          
+  php-xml.x86_64 0:7.1.33-10.el7.remi                                           
+  php-xmlrpc.x86_64 0:7.1.33-10.el7.remi                                        
+
+Dependency Removed:
+  mod_ssl.x86_64 1:2.4.6-97.el7.centos                                          
+
+Complete!
+logout
+
+Last login: Fri Dec 11 18:28:52 2020 from 37.77.105.191
+[root@mail ~]# yum update -y --skip-broken;exit
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.trouble-free.net
+ * extras: mirror.es.its.nyu.edu
+ * remi-php71: mirror.pit.teraswitch.com
+ * remi-safe: mirror.pit.teraswitch.com
+ * updates: mirror.trouble-free.net
+
+epel                                                     | 4.7 kB     00:00     
+No packages marked for update
+logout
+
+[root@mail ~]#  yum -y --skip-broken reinstall polkit;exit
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+
+ * base: mirror.trouble-free.net
+ * extras: mirror.es.its.nyu.edu
+ * remi-php71: mirror.pit.teraswitch.com
+ * remi-safe: mirror.pit.teraswitch.com
+ * updates: mirror.trouble-free.net
+Resolving Dependencies
+--> Running transaction check
+---> Package polkit.x86_64 0:0.112-26.el7 will be reinstalled
+--> Finished Dependency Resolution
+
+
+Dependencies Resolved
+
+================================================================================
+ Package          Arch             Version                 Repository      Size
+================================================================================
+Reinstalling:
+ polkit           x86_64           0.112-26.el7            base           170 k
+
+Transaction Summary
+================================================================================
+Reinstall  1 Package
+
+Total download size: 170 k
+Installed size: 476 k
+Downloading packages:
+polkit-0.112-26.el7.x86_64.rpm                             | 170 kB   00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : polkit-0.112-26.el7.x86_64 [                               ] 1/1  Installing : polkit-0.112-26.el7.x86_64 [##                             ] 1/1  Installing : polkit-0.112-26.el7.x86_64 [####                           ] 1/1  Installing : polkit-0.112
+-26.el7.x86_64 [#####                          ] 1/1  Installing : polkit-0.112-26.el7.x86_64 [######                         ] 1/1  Installing : polkit-0.112-26.el7.x86_64 [##########                     ] 1/1  Installing : polkit-0.112-26.el7.x86_64 [#############                  ] 1/1  Installing : polkit-0.112-26.el7.x86_64 [##############                 ] 1/1  Installing : polkit-0.112-26.el7.x86_64 [###############                ] 1/1  Installing : polkit-0.112-26.el7.x86_64 [#################              ] 1/1  Installing : polkit-0.112-26.el7.x86_64 [######################         ] 1/1  Installing : polkit-0.112-26.el7.x86_64 [#########################      ] 1/1  Installing : polkit-0.112-26.el7.x86_64 [##########################     ] 1/1  Installing : polkit-0.112-26.el7.x86_64 [#############################  ] 1/1  Installing : polkit-0.112-26.el7.x86_64 [############################## ] 1/1  Installing : polkit-0.112-26.el7.x86_64                                   1/1 
+  Verify
+ing  : polkit-0.112-26.el7.x86_64                                   1/1 
+
+Installed:
+  polkit.x86_64 0:0.112-26.el7                                                  
+
+Complete!
+logout
+
+Last login: Fri Dec 11 18:29:05 2020 from 37.77.105.191
+[root@mail ~]#  yum install -y --skip-broken sudo openssh-clients gdb nano wget  httpd mod_ssl zip unzip yum-utils cronie perl;exit
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.trouble-free.net
+ * extras: mirror.es.its.nyu.edu
+ * remi-php71: mirror.pit.teraswitch.com
+ * remi-safe: mirror.pit.teraswitch.com
+ * updates: mirror.trouble-free.net
+Package sudo-1.8.23-10.el7.x86_64 already installed and latest version
+
+Package openssh-clients-7.4p1-21.el7.x86_64 already installed and latest version
+Package gdb-7.6.1-120.el7.x86_64 already installed and latest version
+Package nano-2.3.1-10.el7.x86_64 already installed and latest version
+Package wget-1.14-18.el7_6.1.x86_64 already installed and latest version
+Package zip-3.0-11.el7.x86_64 already installed and latest version
+Package unzip-6.0-21.el7.x86_64 already installed and latest version
+Package yum-utils-1.1.31-54.el7_8.noarch already installed and latest version
+Package cronie-1.4.11-23.el7.x86_64 already installed and latest version
+Package 4:perl-5.16.3-297.el7.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.6-97.el7.centos will be installed
+---> Package mod_ssl.x86_64 1:2.4.6-97.el7.centos will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package        Arch    
+      Version                      Repository      Size
+================================================================================
+Installing:
+ httpd          x86_64        2.4.6-97.el7.centos          updates        2.7 M
+ mod_ssl        x86_64        1:2.4.6-97.el7.centos        updates        114 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages
+
+Total download size: 2.8 M
+Installed size: 9.6 M
+Downloading packages:
+
+(2/2): mod_ssl-2.4.6-97.el 0% [                 ]  0.0 B/s |    0 B   --:-- ETA (1/2): mod_ssl-2.4.6-97.el7.centos.x86_64.rpm              | 114 kB   00:15     
+(2/2): httpd-2.4.6-97.el7.centos.x86_64.rpm                | 2.7 MB   00:15     
+--------------------------------------------------------------------------------
+Total                                              190 kB/s | 2.8 MB  00:15     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : httpd-2.4.6-97.el7.centos.x8 [                             ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [#                            ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [##                           ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [###                          ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [####                         ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [#####                        ] 1/2  Installing : httpd-2.4.6-97
+.el7.centos.x8 [######                       ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [#######                      ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [########                     ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [#########                    ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [##########                   ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [###########                  ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [############                 ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [#############                ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [##############               ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [###############              ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [################             ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [#################            ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [##################           ] 1/2  Installing 
+: httpd-2.4.6-97.el7.centos.x8 [###################          ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [####################         ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [#####################        ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [######################       ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [#######################      ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [########################     ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [#########################    ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [##########################   ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [###########################  ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x8 [############################ ] 1/2  Installing : httpd-2.4.6-97.el7.centos.x86_64                             1/2 
+  Installing : 1:mod_ssl-2.4.6-97.el7.cento [                             ] 2/2  Installing : 1:mod_ssl-2.4.6-97.el7.cento [#                            
+] 2/2  Installing : 1:mod_ssl-2.4.6-97.el7.cento [#########                    ] 2/2  Installing : 1:mod_ssl-2.4.6-97.el7.cento [#################            ] 2/2  Installing : 1:mod_ssl-2.4.6-97.el7.cento [#########################    ] 2/2  Installing : 1:mod_ssl-2.4.6-97.el7.cento [############################ ] 2/2  Installing : 1:mod_ssl-2.4.6-97.el7.centos.x86_64                         2/2 
+  Verifying  : httpd-2.4.6-97.el7.centos.x86_64                             1/2 
+  Verifying  : 1:mod_ssl-2.4.6-97.el7.centos.x86_64                         2/2 
+
+Installed:
+  httpd.x86_64 0:2.4.6-97.el7.centos    mod_ssl.x86_64 1:2.4.6-97.el7.centos   
+
+Complete!
+logout
+
+[root@mail ~]# rpm -Uvh /home/epel.rpm;exit
+Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)
+############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)
+#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+	package epel-release-7-13.noarch is already installed
+logout
+
+rpm -Uvh /home/remi.rpm;exit
+Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)
+############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)
+#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+	package remi-release-7.8-1.el7.remi.noarch is already installed
+logout
+
+[root@mail ~]# yum install -y --skip-broken php php-mcrypt php-cli php-gd php-cu rl php-pgsql php-mysql php-ldap php-zip php-fileinfo php-common php-pdo php-mbst ring php-soap php-zip php-xmlrpc php-opcache;exit
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+
+ * base: mirror.trouble-free.net
+ * extras: mirror.es.its.nyu.edu
+ * remi-php71: mirror.pit.teraswitch.com
+ * remi-safe: mirror.pit.teraswitch.com
+ * updates: mirror.trouble-free.net
+remi-php71                                               | 3.0 kB     00:00     
+Package php-mysql is obsoleted by php-mysqlnd, trying to install php-mysqlnd-7.1.33-10.el7.remi.x86_64 instead
+
+Resolving Dependencies
+--> Running transaction check
+---> Package php.x86_64 0:7.1.33-10.el7.remi will be installed
+---> Package php-cli.x86_64 0:7.1.33-10.el7.remi will be installed
+---> Package php-common.x86_64 0:7.1.33-10.el7.remi will be installed
+--> Processing Dependency: php-json(x86-64) = 7.1.33-10.el7.remi for package: php-common-7.1.33-10.el7.remi.x86_64
+---> Package php-gd.x86_64 0:7.1.33-10.el7.remi will be installed
+---> Package php-ldap.x86_64 0:7.1.33-10.el7.remi will be installed
+---> Package php-mbstring.x86_64 0:7.1.33-10.el7.remi will be installed
+---> Package php-mcrypt.x86_64 0:7.1.33-10.el7.remi will be installed
+---> Package php-mysqlnd.x86_64 0:7.1.33-10.el7.remi will be installed
+---> Package php-opcache.x86_64 0:7.1.33-10.el7.remi will be installed
+---> Package php-pdo.x86_64 0:7.1.33-10.el7.remi will be installed
+---> Package php-pecl-zip.x86_64 0:1.19.2-1.el7.remi.7.1 will be installed
+---> Package php-pgsql.x86_64 0:7.1.33-10.el7.remi will be installed
+---> Package
+ php-soap.x86_64 0:7.1.33-10.el7.remi will be installed
+---> Package php-xmlrpc.x86_64 0:7.1.33-10.el7.remi will be installed
+--> Processing Dependency: php-xml(x86-64) = 7.1.33-10.el7.remi for package: php-xmlrpc-7.1.33-10.el7.remi.x86_64
+--> Running transaction check
+---> Package php-json.x86_64 0:7.1.33-10.el7.remi will be installed
+---> Package php-xml.x86_64 0:7.1.33-10.el7.remi will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package           Arch        Version                    Repository       Size
+================================================================================
+Installing:
+ php               x86_64      7.1.33-10.el7.remi         remi-php71      3.0 M
+ php-cli           x86_64      7.1.33-10.el7.remi         remi-php71      4.6 M
+ php-common        x86_64      7.1.33-10.el7.remi         remi-php71      1.0 M
+ php-gd            x86_64      7.1.33-10.el7.remi
+         remi-php71       79 k
+ php-ldap          x86_64      7.1.33-10.el7.remi         remi-php71       70 k
+ php-mbstring      x86_64      7.1.33-10.el7.remi         remi-php71      582 k
+ php-mcrypt        x86_64      7.1.33-10.el7.remi         remi-php71       63 k
+ php-mysqlnd       x86_64      7.1.33-10.el7.remi         remi-php71      234 k
+ php-opcache       x86_64      7.1.33-10.el7.remi         remi-php71      246 k
+ php-pdo           x86_64      7.1.33-10.el7.remi         remi-php71      127 k
+ php-pecl-zip      x86_64      1.19.2-1.el7.remi.7.1      remi-php71       60 k
+ php-pgsql         x86_64      7.1.33-10.el7.remi         remi-php71      126 k
+ php-soap          x86_64      7.1.33-10.el7.remi         remi-php71      210 k
+ php-xmlrpc        x86_64      7.1.33-10.el7.remi         remi-php71       83 k
+Installing for dependencies:
+ php-json          x86_64      7.1.33-10.el7.remi         remi-php71       64 k
+ php-xml           x86_64      7.1.33-10.el7.remi         remi-php71   
+   213 k
+
+Transaction Summary
+================================================================================
+Install  14 Packages (+2 Dependent packages)
+
+Total download size: 11 M
+Installed size: 39 M
+Downloading packages:
+
+(2/16): php-cli-7.1.33-10. 0% [                 ]  0.0 B/s |    0 B   --:-- ETA (1/16): php-cli-7.1.33-10.el7.remi.x86_64.rpm              | 4.6 MB   00:00     
+(2/16): php-7.1.33-10.el7.remi.x86_64.rpm                  | 3.0 MB   00:00     
+(3/16): php-common-7.1.33-10.el7.remi.x86_64.rpm           | 1.0 MB   00:00     
+(4/16): php-gd-7.1.33-10.el7.remi.x86_64.rpm               |  79 kB   00:00     
+(5/16): php-json-7.1.33-10.el7.remi.x86_64.rpm             |  64 kB   00:00     
+(6/16): php-mbstring-7.1.33-10.el7.remi.x86_64.rpm         | 582 kB   00:00     
+(7/16): php-mcrypt-7.1.33-10.el7.remi.x86_64.rpm           |  63 kB   00:00     
+(8/16): php-mysqlnd-7.1.33-10.el7.remi.x86_64.rpm          | 234 kB   00:00     
+(9/16): php-opcache-7.1.33-10.el7.remi.x86_64.rpm          | 246 kB   00:00     
+(10/16): php-pdo-7.1.33-10.el7.remi.x86_64.rpm             | 127 kB   00:00     
+(11/16): php-pecl-zip-1.19.2-1.el7.remi.7.1.x86_64.rpm     |  60 kB   00:00     
+(12/16): php-pgsql-7.1.33-10
+.el7.remi.x86_64.rpm           | 126 kB   00:00     
+(13/16): php-soap-7.1.33-10.el7.remi.x86_64.rpm            | 210 kB   00:00     
+(14/16): php-xml-7.1.33-10.el7.remi.x86_64.rpm             | 213 kB   00:00     
+(15/16): php-xmlrpc-7.1.33-10.el7.remi.x86_64.rpm          |  83 kB   00:00     
+(16/16): php-ldap-7.1.33-1 99% [===============-]  0.0 B/s |  11 MB   --:-- ETA (16/16): php-ldap-7.1.33-10.el7.remi.x86_64.rpm            |  70 kB   00:00     
+--------------------------------------------------------------------------------
+Total                                               11 MB/s |  11 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : php-json-7.1.33-10.el7.remi [                            ]  1/16  Installing : php-json-7.1.33-10.el7.remi [##############              ]  1/16  Installing : php-json-7.1.33-10.el7.remi [########################### ]  1/16  Installing : php-json-7.1.33-10.el7.remi.x86_64
+                          1/16 
+  Installing : php-common-7.1.33-10.el7.re [                            ]  2/16  Installing : php-common-7.1.33-10.el7.re [#                           ]  2/16  Installing : php-common-7.1.33-10.el7.re [##                          ]  2/16  Installing : php-common-7.1.33-10.el7.re [###                         ]  2/16  Installing : php-common-7.1.33-10.el7.re [####                        ]  2/16  Installing : php-common-7.1.33-10.el7.re [#####                       ]  2/16  Installing : php-common-7.1.33-10.el7.re [######                      ]  2/16  Installing : php-common-7.1.33-10.el7.re [#######                     ]  2/16  Installing : php-common-7.1.33-10.el7.re [########                    ]  2/16  Installing : php-common-7.1.33-10.el7.re [#########                   ]  2/16  Installing : php-common-7.1.33-10.el7.re [##########                  ]  2/16  Installing : php-common-7.1.33-10.el7.re [###########                 ]  2/16  Installing : php-common-7.1.
+33-10.el7.re [############                ]  2/16  Installing : php-common-7.1.33-10.el7.re [#############               ]  2/16  Installing : php-common-7.1.33-10.el7.re [##############              ]  2/16  Installing : php-common-7.1.33-10.el7.re [###############             ]  2/16  Installing : php-common-7.1.33-10.el7.re [################            ]  2/16  Installing : php-common-7.1.33-10.el7.re [#################           ]  2/16  Installing : php-common-7.1.33-10.el7.re [##################          ]  2/16  Installing : php-common-7.1.33-10.el7.re [###################         ]  2/16  Installing : php-common-7.1.33-10.el7.re [####################        ]  2/16  Installing : php-common-7.1.33-10.el7.re [#####################       ]  2/16  Installing : php-common-7.1.33-10.el7.re [######################      ]  2/16  Installing : php-common-7.1.33-10.el7.re [#######################     ]  2/16  Installing : php-common-7.1.33-10.el7.re [########################    ]  2/16  Installing :
+ php-common-7.1.33-10.el7.re [#########################   ]  2/16  Installing : php-common-7.1.33-10.el7.re [##########################  ]  2/16  Installing : php-common-7.1.33-10.el7.re [########################### ]  2/16  Installing : php-common-7.1.33-10.el7.remi.x86_64                        2/16 
+  Installing : php-pdo-7.1.33-10.el7.remi. [                            ]  3/16  Installing : php-pdo-7.1.33-10.el7.remi. [####                        ]  3/16  Installing : php-pdo-7.1.33-10.el7.remi. [#######                     ]  3/16  Installing : php-pdo-7.1.33-10.el7.remi. [##########                  ]  3/16  Installing : php-pdo-7.1.33-10.el7.remi. [##############              ]  3/16  Installing : php-pdo-7.1.33-10.el7.remi. [##################          ]  3/16  Installing : php-pdo-7.1.33-10.el7.remi. [#####################       ]  3/16  Installing : php-pdo-7.1.33-10.el7.remi. [#######################     ]  3/16  Installing : php-pdo-7.1.33-10.el7.remi. [########################### ]  
+3/16  Installing : php-pdo-7.1.33-10.el7.remi.x86_64                           3/16 
+  Installing : php-cli-7.1.33-10.el7.remi. [                            ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [#                           ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [##                          ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [###                         ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [####                        ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [#####                       ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [######                      ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [#######                     ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [########                    ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [#########                   ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [##########                  ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [########### 
+                ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [############                ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [#############               ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [##############              ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [###############             ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [################            ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [#################           ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [##################          ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [###################         ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [####################        ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [#####################       ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [######################      ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [#######################     ]  4/16  Installing : php-cli-7.1.33-10.el7.rem
+i. [########################    ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [#########################   ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [##########################  ]  4/16  Installing : php-cli-7.1.33-10.el7.remi. [########################### ]  4/16  Installing : php-cli-7.1.33-10.el7.remi.x86_64                           4/16 
+  Installing : php-xml-7.1.33-10.el7.remi. [                            ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [#                           ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [####                        ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [#####                       ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [#######                     ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [########                    ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [##########                  ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [###########                 ]  5/16  Installing : php-xm
+l-7.1.33-10.el7.remi. [############                ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [##############              ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [###############             ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [##################          ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [###################         ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [#####################       ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [######################      ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [########################    ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [#########################   ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [##########################  ]  5/16  Installing : php-xml-7.1.33-10.el7.remi. [########################### ]  5/16  Installing : php-xml-7.1.33-10.el7.remi.x86_64                           5/16 
+  Installing : php-xmlrpc-7.1.33-10.el7.re [                            ]  6/16  
+Installing : php-xmlrpc-7.1.33-10.el7.re [##########                  ]  6/16  Installing : php-xmlrpc-7.1.33-10.el7.re [##############              ]  6/16  Installing : php-xmlrpc-7.1.33-10.el7.re [########################    ]  6/16  Installing : php-xmlrpc-7.1.33-10.el7.re [########################### ]  6/16  Installing : php-xmlrpc-7.1.33-10.el7.remi.x86_64                        6/16 
+  Installing : php-7.1.33-10.el7.remi.x86_ [                            ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [#                           ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [##                          ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [###                         ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [####                        ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [#####                       ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [######                      ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [#######            
+         ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [########                    ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [#########                   ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [##########                  ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [###########                 ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [############                ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [#############               ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [##############              ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [###############             ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [################            ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [#################           ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [##################          ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [###################         ]  7/16
+  Installing : php-7.1.33-10.el7.remi.x86_ [####################        ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [#####################       ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [######################      ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [#######################     ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [########################    ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [#########################   ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [##########################  ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_ [########################### ]  7/16  Installing : php-7.1.33-10.el7.remi.x86_64                               7/16 
+  Installing : php-pgsql-7.1.33-10.el7.rem [                            ]  8/16  Installing : php-pgsql-7.1.33-10.el7.rem [###                         ]  8/16  Installing : php-pgsql-7.1.33-10.el7.rem [########                    ]  8/16  Installing : php-pgsql-7.1.33-10.el7.rem [#############   
+            ]  8/16  Installing : php-pgsql-7.1.33-10.el7.rem [##############              ]  8/16  Installing : php-pgsql-7.1.33-10.el7.rem [#################           ]  8/16  Installing : php-pgsql-7.1.33-10.el7.rem [######################      ]  8/16  Installing : php-pgsql-7.1.33-10.el7.rem [########################### ]  8/16  Installing : php-pgsql-7.1.33-10.el7.remi.x86_64                         8/16 
+  Installing : php-mysqlnd-7.1.33-10.el7.r [                            ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.r [#                           ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.r [####                        ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.r [######                      ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.r [########                    ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.r [##########                  ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.r [############                ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.
+r [#############               ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.r [##############              ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.r [################            ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.r [##################          ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.r [####################        ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.r [######################      ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.r [########################    ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.r [##########################  ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.r [########################### ]  9/16  Installing : php-mysqlnd-7.1.33-10.el7.remi.x86_64                       9/16 
+  Installing : php-mcrypt-7.1.33-10.el7.re [                            ] 10/16  Installing : php-mcrypt-7.1.33-10.el7.re [##############              ] 10/16  Installing : php-mcrypt-7.1.33-10.el7.re [########################### ] 10/16  Installing : php-mcr
+ypt-7.1.33-10.el7.remi.x86_64                       10/16 
+  Installing : php-pecl-zip-1.19.2-1.el7.r [                            ] 11/16  Installing : php-pecl-zip-1.19.2-1.el7.r [########                    ] 11/16  Installing : php-pecl-zip-1.19.2-1.el7.r [#########                   ] 11/16  Installing : php-pecl-zip-1.19.2-1.el7.r [##################          ] 11/16  Installing : php-pecl-zip-1.19.2-1.el7.r [###################         ] 11/16  Installing : php-pecl-zip-1.19.2-1.el7.r [####################        ] 11/16  Installing : php-pecl-zip-1.19.2-1.el7.r [#####################       ] 11/16  Installing : php-pecl-zip-1.19.2-1.el7.r [######################      ] 11/16  Installing : php-pecl-zip-1.19.2-1.el7.r [########################### ] 11/16  Installing : php-pecl-zip-1.19.2-1.el7.remi.7.1.x86_64                  11/16 
+  Installing : php-soap-7.1.33-10.el7.remi [                            ] 12/16  Installing : php-soap-7.1.33-10.el7.remi [##                          ] 12/16
+  Installing : php-soap-7.1.33-10.el7.remi [#####                       ] 12/16  Installing : php-soap-7.1.33-10.el7.remi [########                    ] 12/16  Installing : php-soap-7.1.33-10.el7.remi [###########                 ] 12/16  Installing : php-soap-7.1.33-10.el7.remi [##############              ] 12/16  Installing : php-soap-7.1.33-10.el7.remi [#################           ] 12/16  Installing : php-soap-7.1.33-10.el7.remi [###################         ] 12/16  Installing : php-soap-7.1.33-10.el7.remi [######################      ] 12/16  Installing : php-soap-7.1.33-10.el7.remi [#########################   ] 12/16  Installing : php-soap-7.1.33-10.el7.remi [########################### ] 12/16  Installing : php-soap-7.1.33-10.el7.remi.x86_64                         12/16 
+  Installing : php-gd-7.1.33-10.el7.remi.x [                            ] 13/16  Installing : php-gd-7.1.33-10.el7.remi.x [########                    ] 13/16  Installing : php-gd-7.1.33-10.el7.remi.x [##############   
+           ] 13/16  Installing : php-gd-7.1.33-10.el7.remi.x [######################      ] 13/16  Installing : php-gd-7.1.33-10.el7.remi.x [########################### ] 13/16  Installing : php-gd-7.1.33-10.el7.remi.x86_64                           13/16 
+  Installing : php-opcache-7.1.33-10.el7.r [                            ] 14/16  Installing : php-opcache-7.1.33-10.el7.r [##                          ] 14/16  Installing : php-opcache-7.1.33-10.el7.r [####                        ] 14/16  Installing : php-opcache-7.1.33-10.el7.r [#######                     ] 14/16  Installing : php-opcache-7.1.33-10.el7.r [#########                   ] 14/16  Installing : php-opcache-7.1.33-10.el7.r [###########                 ] 14/16  Installing : php-opcache-7.1.33-10.el7.r [#############               ] 14/16  Installing : php-opcache-7.1.33-10.el7.r [##############              ] 14/16  Installing : php-opcache-7.1.33-10.el7.r [################            ] 14/16  Installing : php-opcache-7.1.33-10.el7.r
+ [##################          ] 14/16  Installing : php-opcache-7.1.33-10.el7.r [#####################       ] 14/16  Installing : php-opcache-7.1.33-10.el7.r [#######################     ] 14/16  Installing : php-opcache-7.1.33-10.el7.r [#########################   ] 14/16  Installing : php-opcache-7.1.33-10.el7.r [########################### ] 14/16  Installing : php-opcache-7.1.33-10.el7.remi.x86_64                      14/16 
+  Installing : php-ldap-7.1.33-10.el7.remi [                            ] 15/16  Installing : php-ldap-7.1.33-10.el7.remi [#############               ] 15/16  Installing : php-ldap-7.1.33-10.el7.remi [##############              ] 15/16  Installing : php-ldap-7.1.33-10.el7.remi [########################### ] 15/16  Installing : php-ldap-7.1.33-10.el7.remi.x86_64                         15/16 
+  Installing : php-mbstring-7.1.33-10.el7. [                            ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [#                           ] 16/16  Installing : php-m
+bstring-7.1.33-10.el7. [##                          ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [###                         ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [####                        ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [#####                       ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [######                      ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [#######                     ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [########                    ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [#########                   ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [##########                  ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [###########                 ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [############                ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [#############               ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [##############              ] 16/16  In
+stalling : php-mbstring-7.1.33-10.el7. [###############             ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [################            ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [#################           ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [##################          ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [###################         ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [####################        ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [#####################       ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [######################      ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [#######################     ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [########################    ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [#########################   ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [##########################  ] 16/16  Installing : php-mbstring-7.1.33-10.el7. [########################
+### ] 16/16  Installing : php-mbstring-7.1.33-10.el7.remi.x86_64                     16/16 
+=====================================================================
+
+  WARNING : PHP 7.1 have reached its "End of Life" in
+  December 2019. Even, if this package includes some of
+  the important security fix, backported from 7.2, the
+  UPGRADE to a maintained version is very strongly RECOMMENDED.
+
+=====================================================================
+  Verifying  : php-xmlrpc-7.1.33-10.el7.remi.x86_64                        1/16 
+  Verifying  : php-mcrypt-7.1.33-10.el7.remi.x86_64                        2/16 
+  Verifying  : php-pdo-7.1.33-10.el7.remi.x86_64                           3/16 
+  Verifying  : php-pecl-zip-1.19.2-1.el7.remi.7.1.x86_64                   4/16 
+  Verifying  : php-soap-7.1.33-10.el7.remi.x86_64                          5/16 
+  Verifying  : php-gd-7.1.33-10.el7.remi.x86_64                            6/16 
+  Verifying  : php-7.1.33-10.el7.remi.x86_64        
+                       7/16 
+  Verifying  : php-opcache-7.1.33-10.el7.remi.x86_64                       8/16 
+  Verifying  : php-cli-7.1.33-10.el7.remi.x86_64                           9/16 
+  Verifying  : php-pgsql-7.1.33-10.el7.remi.x86_64                        10/16 
+  Verifying  : php-xml-7.1.33-10.el7.remi.x86_64                          11/16 
+  Verifying  : php-common-7.1.33-10.el7.remi.x86_64                       12/16 
+  Verifying  : php-json-7.1.33-10.el7.remi.x86_64                         13/16 
+  Verifying  : php-ldap-7.1.33-10.el7.remi.x86_64                         14/16 
+  Verifying  : php-mysqlnd-7.1.33-10.el7.remi.x86_64                      15/16 
+  Verifying  : php-mbstring-7.1.33-10.el7.remi.x86_64                     16/16 
+
+Installed:
+  php.x86_64 0:7.1.33-10.el7.remi                                               
+  php-cli.x86_64 0:7.1.33-10.el7.remi                                           
+  php-common.x86_64 0:7.1.33-10.el7.remi                             
+           
+  php-gd.x86_64 0:7.1.33-10.el7.remi                                            
+  php-ldap.x86_64 0:7.1.33-10.el7.remi                                          
+  php-mbstring.x86_64 0:7.1.33-10.el7.remi                                      
+  php-mcrypt.x86_64 0:7.1.33-10.el7.remi                                        
+  php-mysqlnd.x86_64 0:7.1.33-10.el7.remi                                       
+  php-opcache.x86_64 0:7.1.33-10.el7.remi                                       
+  php-pdo.x86_64 0:7.1.33-10.el7.remi                                           
+  php-pecl-zip.x86_64 0:1.19.2-1.el7.remi.7.1                                   
+  php-pgsql.x86_64 0:7.1.33-10.el7.remi                                         
+  php-soap.x86_64 0:7.1.33-10.el7.remi                                          
+  php-xmlrpc.x86_64 0:7.1.33-10.el7.remi                                        
+
+Dependency Installed:
+  php-json.x86_64 0:7.1.33-10.el7.remi    php-xml.x86_64 0:7.1.33-10.el7.remi   
+
+
+Complete!
+logout
+
+[root@mail ~]# systemctl restart httpd &&  systemctl enable httpd;exit
+Created symlink from /etc/systemd/system/multi-user.target.wants/httpd.service to /usr/lib/systemd/system/httpd.service.
+logout
+
+[root@mail ~]# systemctl restart sshd;exit
+logout
+
+[root@mail ~]# yum remove -y libopendkim-devel opendkim;exit
+Loaded plugins: fastestmirror
+No Match for argument: libopendkim-devel
+No Match for argument: opendkim
+No Packages marked for removal
+logout
+
+[root@mail ~]# crontab /home/cron;exit
+logout
+
+[root@mail ~]# rm -rf /home/cron;exit
+logout
+
+Last login: Fri Dec 11 18:31:07 2020 from 37.77.105.191
+[root@mail ~]# service crond restart;exit
+Redirecting to /bin/systemctl restart crond.service
+logout
+
+Last login: Fri Dec 11 18:31:10 2020 from 37.77.105.191
+[root@mail ~]# service httpd restart;exit
+Redirecting to /bin/systemctl restart httpd.service
+logout
+
+[root@mail ~]# service httpd restart;exit
+Redirecting to /bin/systemctl restart httpd.service
+logout
+
+[root@mail ~]# service pmta stop && service pmtahttp stop;exit
+Stopping pmta (via systemctl):  [60G[[0;32m  OK  [0;39m]
+Stopping pmtahttp (via systemctl):  [60G[[0;32m  OK  [0;39m]Last login: Fri Dec 11 18:31:22 2020 from 37.77.105.191
+[root@mail ~]# service pmta restart;exit
+Restarting pmta (via systemctl):  Job for pmta.service failed b[root@mail ~]# service pmta restart;exit
+Restarting pmta (via systemctl):  Job for pmta.service failed because the control process exited with error code. See "systemctl status pmta.service" and "journalctl -xe" for details.
+[60G[[0;31mFAILED[0;39m]
+logout
+
+Last login: Fri Dec 11 18:42:26 2020 from 37.77.105.191
+[root@mail ~]# service pmtahttp restart;exit
+Restarting pmtahttp (via systemctl):  Job for pmtahttp.service failed because the control process exited with error code. See "systemctl status pmtahttp.service" and "journalctl -xe" for details.
+[60G[[0;31mFAILED[0;39m]
+logout
+
+Installing PowerMTA completed !
